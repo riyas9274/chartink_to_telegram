@@ -2,8 +2,11 @@ name: Chartink to Telegram
 
 on:
   schedule:
-    # Runs at 9:25 AM UTC every weekday (Mon-Fri), then every hour at 25 minutes past the hour till 3:25 PM UTC.
-    - cron: '25 9-15 * * 1-5'
+    - cron: '45 9 * * 1-5'   # 3:15 PM IST
+    - cron: '50 9 * * 1-5'   # 3:20 PM IST
+    - cron: '55 9 * * 1-5'   # 3:25 PM IST
+    - cron: '58 9 * * 1-5'   # 3:28 PM IST
+    - cron: '30 10 * * 1-5'  # 4:00 PM IST
   workflow_dispatch: {}
 
 
